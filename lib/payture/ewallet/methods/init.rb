@@ -26,6 +26,8 @@ module Payture::Ewallet
             Language: optional[:language],
             Url: optional[:return_url],
             Cheque: encoded_cheque(optional[:cheque]),
+            Product: optional[:product],
+            Total: optional[:total],
           ),
         }
       end
